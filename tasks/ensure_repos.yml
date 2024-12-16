@@ -17,4 +17,4 @@
     ansible.builtin.package:
       name: "https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ ansible_distribution_major_version }}.noarch.rpm" 
       state: present
-      become: true
+
