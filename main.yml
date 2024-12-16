@@ -1,0 +1,6 @@
+--- 
+- name: Configure host
+  hosts: all
+
+  vars_files:
+    - "{{ playbook_dir  }}/defaults/main.yml"

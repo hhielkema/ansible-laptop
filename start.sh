@@ -6,3 +6,6 @@ sudo usermod -aG wheel "${USER}"
 
 # Install ansible
 sudo dnf -y install ansible
+
+# Run Ansible
+ansible-playbook main.yml --ask-become-user -e playbooks/default/main.yml
