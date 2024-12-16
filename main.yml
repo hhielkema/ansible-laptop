@@ -6,5 +6,5 @@
     - default.config.yml
 
   tasks:
-    - import_tasks: playbooks/ensure_repos.yml
+    - import_tasks: tasks/ensure_repos.yml
       tags: ['repos']
