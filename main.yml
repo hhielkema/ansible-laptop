@@ -3,7 +3,8 @@
   hosts: all
 
   vars_files:
-    - "{{ playbook_dir  }}/defaults/main.yml"
+    - default.config.yml
 
-tasks:
-- import_tasks: playbooks/ensure_repos.yml
+  tasks:
+    - import_tasks: playbooks/ensure_repos.yml
+      tags: ['repos']
