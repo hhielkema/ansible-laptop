@@ -1,0 +1,8 @@
+---
+
+- name: Ensure packages
+  ansible.builtin.package:
+    name:
+      - vim
+      - bash-completion
+      - thunderbird
