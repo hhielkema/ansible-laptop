@@ -5,5 +5,5 @@
   vars_files:
     - "{{ playbook_dir  }}/defaults/main.yml"
 
-- name: Ensure repo files
-  ansible.builtin.include_tasks: ensure_repos.yml
+tasks:
+- import_tasks: playbooks/ensure_repos.yml
