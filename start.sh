@@ -8,4 +8,5 @@ sudo usermod -aG wheel "${USER}"
 sudo dnf -y install ansible
 
 # Run Ansible
-ansible-playbook main.yml --ask-become-user -e playbooks/default/main.yml
+ansible-playbook main.yml --ask-become-pass -e playbooks/default/main.yml
+
