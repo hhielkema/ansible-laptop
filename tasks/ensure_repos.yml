@@ -4,10 +4,9 @@
     ansible.builtin.debug: 
       msg: "{{ ansible_distribution }}"
 
-
   - name: Distribution version
     ansible.builtin.debug: 
-      msg: "{{ ansible_distribution_version}}"
+      msg: "{{ ansible_distribution_version }}"
 
   - name: Distribution major version
     ansible.builtin.debug: 
